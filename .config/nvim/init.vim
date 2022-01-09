@@ -10,6 +10,9 @@ Plug 'psf/black', { 'branch': 'stable' }
 Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
 
+" Editor plugin
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
 " Python language server related plugins
 Plug 'neovim/nvim-lspconfig'
 Plug 'ncm2/ncm2'
