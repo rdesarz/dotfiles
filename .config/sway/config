@@ -45,6 +45,11 @@ exec swayidle -w \
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
+input type:keyboard {
+    xkb_layout us_qwerty-fr
+    # xkb_options grp:win_space_toggle,compose:caps
+}
+
 ### Input configuration
 #
 # Example configuration:
