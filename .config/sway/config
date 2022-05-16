@@ -45,6 +45,9 @@ exec swayidle -w \
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
+set $lockman exec bash ~/.config/sway/lockman.sh
+bindsym $mod+Ctrl+l exec $lockman
+
 input type:keyboard {
     xkb_layout us_qwerty-fr
     # xkb_options grp:win_space_toggle,compose:caps
