@@ -120,3 +120,8 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# Custom commands
+function start_remote_vnc() {
+ssh -L 5901:127.0.0.1:5901 -l "$1" "$2" "x11vnc -rfbauth ~/.vnc/passwd -display :1"
+}
